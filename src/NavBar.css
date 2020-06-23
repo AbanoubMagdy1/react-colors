@@ -1,0 +1,48 @@
+.NavBar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 6vh;
+}
+.NavBar-link{
+    margin-right: 10px;
+    width: 150px;
+    background-color: #aaa;
+    height: 100%;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NavBar-link a{
+    text-decoration: none;
+    color : black;
+}
+.NavBar-select{
+    margin-right: 20px;
+    margin-left: auto;
+}
+.slider {
+    -webkit-appearance: none;
+    margin: 10px;
+    width: 200px;
+    height: 10px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider:hover{
+    opacity: 1;
+} 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%; 
+    background: #4CAF50;
+    cursor: pointer;
+}

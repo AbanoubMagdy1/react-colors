@@ -37,21 +37,20 @@
     opacity: 1;
 }
 .ColorBox .overlay{
-    opacity: 0;
     z-index: 10;
     position: absolute;
     width: 100px;
     height: 100px;
-    transform: scale(0.1);
-    transition: 0.3s all;
+    transform: scale(0.01);
+    opacity: 0;
 }
 .overlay.copied{
+    transition: 1s all;
     opacity: 1;
-    transform: scale(50);
+    transform: scale(40);
 }
 
 .copy-display{
-    text-transform: uppercase;
     position: fixed;
     left: 0;
     top:0;
@@ -61,35 +60,43 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    opacity: 0;
     transform: scale(0.01);
 }
+.copy-display h1{
+    text-transform: uppercase;
+}
 .copy-display.c{
+    transition: 1s all;
+    transition-delay: .7s;
     transform: scale(1);
+    opacity: 1;
     z-index: 25;
 }
 .copy-text{
     background-color: rgba(255, 255, 255, 0.3);
-    font-weight: 200;
+    font-size: 6rem;
     color : white;
     width: 100%;
     font-weight: 500;
     text-align: center;
-    opacity: 0;
-    transition: 0.7s all;
-    transition-delay: 0.4s;
-}
-
-.copy-text.c{
-    opacity: 1;
-    transform: scale(3);
 }
 .copy-color{
-    opacity: 0;
-    transition: 0.7s all;
-    transition-delay: 0.4s;
-    margin : 2rem;
+    margin : 0.3rem;
+    font-size: 1.5rem;
 }
-.copy-color.c{
-    opacity: 1;
-    transform: scale(1.5);
+@media (max-width : 720px){
+    .ColorBox{
+        display: block;
+        width: 100%;
+    }
+    .ColorBox .overlay{
+        width: 100%;
+        opacity: 1;
+        transform: scaleY(0.01);
+    }
+    .overlay.copied{
+        z-index: 15;
+        transform: scaleY(13);
+    }
 }
