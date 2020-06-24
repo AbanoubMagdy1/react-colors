@@ -1,0 +1,31 @@
+.MiniPalette{
+    background-color: white;
+    border : 5px solid white;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+}
+.MiniPalette-colors{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #aaa;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 200px;
+}
+.MiniPalette-box{
+    display: inline-block;
+    width : 20%;
+    height: 25%;
+}
+.MiniPalette-footer{
+    padding: 1rem;
+}
+
+.MiniPalette-footer span:nth-child(1){
+    color : black;
+    font-weight: bold;
+}
+.MiniPalette-footer span:nth-child(2){
+    float: right;
+}

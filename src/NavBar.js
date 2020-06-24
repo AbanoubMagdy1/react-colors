@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom'
 import './NavBar.css'
 import Select from '@material-ui/core/Select'
 import MenuItem from '@material-ui/core/MenuItem'
@@ -14,7 +15,7 @@ class NavBar extends Component {
         return (
             <div className="NavBar">
                     <div className="NavBar-link">
-                        <a href="/">reactcolorpicker</a>
+                        <Link to="/">reactcolorpicker</Link>
                     </div>
                     <span>Level : {this.props.level}</span>
                     <input className="slider"

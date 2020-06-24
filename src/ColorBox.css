@@ -42,11 +42,10 @@
     width: 100px;
     height: 100px;
     transform: scale(0.01);
-    opacity: 0;
+    opacity: 1;
 }
 .overlay.copied{
     transition: 1s all;
-    opacity: 1;
     transform: scale(40);
 }
 
