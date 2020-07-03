@@ -15,9 +15,9 @@ const generatePalette = (palette, numOfLevels) => {
     console.log(palette.colors)
     for(let color of palette.colors){
         const newColors = chroma.scale([
-                                chroma(color.color).brighten(1.2),
+                                chroma(color.color).brighten(1.5),
                                 color.color, 
-                                chroma(color.color).darken(1.2)])
+                                chroma(color.color).darken(1.5)])
                             .colors(numOfLevels);
         for(let i in levels){
             shades[levels[i]].push({

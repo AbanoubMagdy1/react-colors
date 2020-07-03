@@ -46,3 +46,15 @@
     background: #4CAF50;
     cursor: pointer;
 }
+
+@media (max-width : 720px){
+    .NavBar{
+        font-size: 12px;
+    }
+    .NavBar-link{
+        padding: 0 2px;
+    }
+    .slider{
+        width: 100px;
+    }
+}

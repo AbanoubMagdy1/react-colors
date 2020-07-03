@@ -16,3 +16,22 @@
     margin: 0 1rem;
     font-size: 1.5rem;
 }
+.BackBox{
+    position: relative;
+    display: inline-block;
+    width : 20%;
+    height: 50%;
+    margin-bottom: -4px;
+    background-color: black;
+}
+.BackBox a{
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color : white;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 5px;
+    text-decoration: none;
+}

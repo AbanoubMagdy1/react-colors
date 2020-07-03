@@ -4,8 +4,9 @@
     width: 60%;
     margin: 2rem auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1em;
+    min-width: 400px;
     background-color: gray;
     border-radius: 15px;
 }
@@ -13,8 +14,3 @@
     text-decoration: none;
 }
 
-@media(max-width : 920px){
-    .PaletteList{
-        width : 90%;
-    }
-}
