@@ -50,6 +50,7 @@
 
 .ColorBox .more a{
     color : black;
+    font-size: 22px;
     text-decoration: none;
 }
 .ColorBox:hover .copy{

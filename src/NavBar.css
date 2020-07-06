@@ -49,13 +49,13 @@
 
 @media (max-width : 720px){
     .NavBar{
-        font-size: 8px;
+        font-size: 16px;
     }
     .NavBar-link{
         padding: 0 2px;
     }
     .slider{
-        width: 100px;
+        width: 140px;
     }
     .NavBar .Level{
         display : none;
