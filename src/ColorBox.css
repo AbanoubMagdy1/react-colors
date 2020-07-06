@@ -91,7 +91,7 @@
     transition-delay: .7s;
     transform: scale(1);
     opacity: 1;
-    z-index: 25;
+    z-index: 25 !important;
 }
 .copy-text{
     background-color: rgba(255, 255, 255, 0.3);
