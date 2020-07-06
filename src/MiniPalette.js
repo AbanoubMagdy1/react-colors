@@ -27,7 +27,7 @@ class MiniPalette extends Component {
     handleOpen = () => {
         this.setState({open : true})
     }
-    remove = (e) => {
+    remove = () => {
         this.props.remove(this.props.id)
     }
 

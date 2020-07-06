@@ -32,7 +32,7 @@ class NavBar extends Component {
                 </div>
                 { original &&(
                 <div>
-                    <span>
+                    <span className="Level">
                         Level : {this.props.level}
                     </span>
                     <input className="slider"

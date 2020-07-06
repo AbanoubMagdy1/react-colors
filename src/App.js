@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import {Switch, Route} from 'react-router-dom'
+import { Route } from 'react-router-dom'
+import {AnimatedSwitch} from 'react-router-transition'
 import Palette from './Palette'
 import PaletteList from './PaletteList'
 import SingleColorPalette from './SingleColorPalette'
 import NewPaletteForm from './NewPaletteForm'
 import generatePalette from './Shades'
 import colors from './seedColors'
+import './App.css'
 
 class App extends Component {
   constructor(props){
@@ -55,7 +57,12 @@ class App extends Component {
     }
     return (
       <div>
-        <Switch>
+        <AnimatedSwitch
+          atEnter={{opacity : 0}}
+          atLeave={{opacity : 0}}
+          atActive={{opacity : 1}}
+          className="switch-wrapper"
+        >
           <Route exact path="/palette/new" render={(routerProps) => <NewPaletteForm 
                                                             addPalette={this.addPalette}
                                                             palettes={this.state.palettes}
@@ -66,7 +73,7 @@ class App extends Component {
                                                         remove={this.removePalette}/>}}/>
           <Route exact path="/palette/:id" render={this.getPalette}/>
           <Route exact path="/palette/:paletteid/:colorid" render={this.getColor}/>
-        </Switch>
+        </AnimatedSwitch>
       </div>
     );
   }

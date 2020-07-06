@@ -36,6 +36,18 @@ const styles = {
                 }
             }
         }
+    },
+    "@media (max-width : 1260px)" : {
+        root : {
+            width : "50%",
+            height : "15%"
+        }
+    },
+    "@media (max-width : 960px)" : {
+        root : {
+            width : "100vw",
+            height : "8%"
+        }
     }
 }
 const DraggableColorBox = SortableElement((props) => {
