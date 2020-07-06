@@ -67,7 +67,7 @@
 }
 .overlay.copied{
     transition: 1s all;
-    transform: scale(40);
+    transform: scale(60);
 }
 
 .copy-display{
